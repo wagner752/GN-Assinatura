@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <!-- FAVICON -->
+    <link rel="icon" href="https://github.com/wagner752/Assinaturas-GN/blob/main/_img/favicon.jpg?raw=true">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/gh/wagner752/Assinaturas-GN@main/_css/estilo.css" rel="stylesheet">    
+    
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js" crossOrigin="anonymous"></script>
+
+    <title>Assinatura Gentil Negócios</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 sideA">
+                <img src="https://github.com/wagner752/Assinaturas-GN/blob/main/_img/logo_gentil.png?raw=true" class="img-fluid">
+            </div>
+
+            <div class="col-8 sideB">
+                <h3>
+                    Faça sua assinatura da Gentil Negócios
+                </h3>
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <label id="label-nome" for="nome" style="display: none;">Nome do colaborador</label>
+                            <input type="text" class="form-control" placeholder="Nome e Sobrenome" id="nome">
+                        </div>
+                        
+                        <div class="col">
+                            <label for="setor"></label>
+                            <select id="setor" class="form-control">
+                                <option value="" selected>Selecione o setor</option>
+                                <option>Administração</option>
+                                <option value="Célula de Inteligência Comercial">Célula de Inteligência Comercial</option>
+                                <option>Comercial</option>
+                                <option>Contabilidade</option>
+                                <option>Controladoria</option>
+                                <option>Departamento Pessoal</option>
+                                <option>Diretoria</option>
+                                <option>Financeiro</option>
+                                <option>Jurídico</option>
+                                <option>Marketing</option>
+                                <option>Núcleo de Excelência</option>
+                                <option>Gente e Gestão</option>
+                                <option>Segurança</option>
+                                <option>Tecnologia de Excelência</option>
+                                <option>Suprimentos</option>
+                            </select>
+                        </div> <!-- /col -->
+                    </div> <!-- /form-control -->
+                </form>
+                
+                <canvas class="img-fluid" id="c" width="100%" height="100%" style="margin-top: 5%;"></canvas>
+                
+                <div id="toggle" class="signature">
+                    <img crossOrigin="anonymous" class="img-fluid" id="assinaturaTemplate"/>
+                </div>
+
+                <a id="link" target="new_blank"></a>
+				<button onclick="saveImage()">Baixar</button>
+
+                <button onclick="saveImage()" class="btn btn-primary">Baixar Assinatura</button>
+                <img id="logo" src="https://github.com/wagner752/Assinaturas-GN/blob/main/_img/tex_logo.png?raw=true" class="img-fluid" style="width: 60px; height: 60px; margin-left: 70%; margin-bottom: 2%;">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/wagner752/Assinaturas-GN@main/_js/main.js" crossorigin="anonymous"></script>
+
+</html>
