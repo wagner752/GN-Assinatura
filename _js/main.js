@@ -7,8 +7,8 @@ assinatura_custom.onload = () => {
     c.height = 257;
     render();
 };
-
-assinatura_custom.src = "https://img.ibxk.com.br/2012/11/materias/1394995828123650-o.jpg";
+assinatura_custom.crossOrigin = "anonymous"
+assinatura_custom.src = "https://drive.google.com/file/d/1r70q5JOt0CsjZUTDT4csLq_EvxiCp1lL/view?usp=sharing";
 
 nome.oninput = setor.oninput = render;
 
